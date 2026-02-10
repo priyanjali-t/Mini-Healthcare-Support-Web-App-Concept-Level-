@@ -93,6 +93,8 @@ Potential enhancements for this system could include:
 
 ## Live Demo
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_NETLIFY_SITE_ID/deploy-status)](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_NAME/deploys)
+
 This application can be deployed to free hosting platforms for live demonstration:
 
 ### Deployment Options
@@ -106,14 +108,17 @@ This application can be deployed to free hosting platforms for live demonstratio
 **Netlify:**
 1. Push code to GitHub repository
 2. Connect repository to Netlify
-3. Set build command: `npm run build`
-4. Set publish directory: `build/`
-5. Live URL format: `https://healthcare-support.netlify.app`
+3. Netlify will automatically detect the `netlify.toml` configuration
+4. Build command: `npm run build` (configured automatically)
+5. Publish directory: `build/` (configured automatically)
+6. Live URL format: `https://mini-healthcare-support.netlify.app`
 
 **GitHub Pages:**
-1. Add `"homepage": "https://yourusername.github.io/healthcare-support"` to package.json
-2. Run `npm run deploy` (requires gh-pages package)
-3. Live URL format: `https://yourusername.github.io/healthcare-support`
+1. Repository already configured with proper settings
+2. Install gh-pages: `npm install --save-dev gh-pages`
+3. Build and deploy: `npm run deploy`
+4. Enable GitHub Pages in repository settings
+5. Live URL format: `https://priyanjali-t.github.io/Mini-Healthcare-Support-Web-App-Concept-Level-`
 
 ### Deployment Commands
 
@@ -139,6 +144,39 @@ npm run deploy
 - Allows easy sharing with team members and partners
 
 > **Note:** The hosted version is for demonstration purposes only and uses client-side storage. For production use, a backend database would be required.
+
+### GitHub Pages Specific Instructions
+
+To deploy this application to GitHub Pages:
+
+1. **Install gh-pages package:**
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+
+2. **Build and deploy to GitHub Pages:**
+   ```bash
+   npm run deploy
+   ```
+
+3. **Enable GitHub Pages in repository settings:**
+   - Go to your GitHub repository
+   - Navigate to Settings → Pages
+   - Select source as "gh-pages" branch
+   - Choose "/(root)" folder
+   - Click Save
+
+4. **Access your live application** at:
+   `https://priyanjali-t.github.io/Mini-Healthcare-Support-Web-App-Concept-Level-`
+
+### Benefits of GitHub Pages Deployment
+
+- Completely free hosting
+- Direct integration with GitHub
+- No additional services required
+- Perfect for portfolio and demonstration projects
+- Instant updates when deploying
+- Ideal for showcasing to NGOs and hospitals
 
 ## License
 
